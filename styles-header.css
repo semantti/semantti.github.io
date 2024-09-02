@@ -1,0 +1,81 @@
+@media only screen and (min-width: 0rem) {
+  #cs-header {
+    padding: 1rem 1rem;
+    background: #1a1a1a;
+  }
+  #cs-header .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+  }
+  #cs-header .cs-ul {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  #cs-header .cs-li {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+  }
+  #cs-header .cs-copyright {
+    font-size: 0.9375rem;
+    line-height: 1.5em;
+    margin-top: 1.25rem;
+    color: #a0a3bd;
+    display: block;
+    order: 1;
+    flex: none;
+  }
+  #cs-header .cs-logoname {
+      font-weight: 1000;
+      font-size: clamp(1.5rem, 2vw, 1.0625rem);
+      color: #e4f0ef;
+      text-decoration: none;
+  }
+  #cs-header .cs-linkedin {
+      font-weight: 1000;
+      font-size: clamp(1.5rem, 2vw, 1.0625rem);
+      color: #e4f0ef;
+      text-decoration: none;
+      margin-bottom: -2px;
+  }
+  #cs-header .cs-link {
+    font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #cs-header .cs-link:hover:before {
+    width: 100%;
+  }
+  #cs-header .cs-link:before {
+    content: "";
+    width: 0%;
+    height: 0.05rem;
+    background: var(--bodyTextColorWhite);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+}
+
+@media only screen and (min-width: 43.75rem) {
+  #cs-header .cs-ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: clamp(2.75rem, 7vw, 5.5rem);
+  }
+  #cs-header .cs-copyright {
+    margin: 0 0 0 auto;
+    order: 2;
+  }
+}
