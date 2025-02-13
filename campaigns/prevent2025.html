@@ -1,1 +1,35 @@
-A
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantti questionare</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #fff;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    /* Set the image height to 20% of the viewport height */
+    .container img {
+      height: 20vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://semantti.com/images/logo-semantti-orion-whitebg-1024px.png" alt="Centered Image">
+  </div>
+  <script>
+      document.querySelector('.cs-form').addEventListener('submit', function(event) { event.preventDefault(); var email = document.getElementById('cs-email-field').value; window.location.href = "https://share-eu1.hsforms.com/1poejRE89TEOdOfiB9JRjpQ2e9lqq?email=" + encodeURIComponent(email); });
+    setTimeout(function() {
+      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSctYchzmz6C3iBNp8gn2rVwq0Zt8UantbLg77DU8CJhLSUZZw/viewform?usp=sharing";
+    }, 1500);
+  </script>
+</body>
+</html>
